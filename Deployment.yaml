@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gittest-deployment
+spec:
+  selector:
+    matchLabels:
+      app: gittest
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: gittest
+    spec:
+      containers:
+        - name: gittest
+          image: springbootstudy/gittest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
