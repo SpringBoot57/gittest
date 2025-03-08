@@ -18,3 +18,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
+          env:
+            - name: KUBECONFIG
+              value: "C:/Users/Admin/kubeconfig"
