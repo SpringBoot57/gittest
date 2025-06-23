@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /app
-EXPOSE 9191
-COPY target/gittest.jar gittest.jar
-ENTRYPOINT ["java", "-jar", "gittest.jar"]
+EXPOSE 8080
+COPY target/ai-doc-summarizer.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
