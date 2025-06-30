@@ -20,3 +20,6 @@ mvn package
 ```
 mvn test
 ```
+
+## Post Tracking
+This repository also contains a `post-tracking` Spring Boot module that demonstrates JWT secured CRUD APIs for courier tracking. Run `mvn -f post-tracking/pom.xml spring-boot:run` to start the application.
